@@ -7,7 +7,7 @@ The stack:
 - Backend: NodeJS
 - Tests: Jest, NodeJS
 
-For fun, I've added AI Generated "customer" reviews.
+For fun, I've added AI generated "customer" reviews.
 
 ## Demo
 
