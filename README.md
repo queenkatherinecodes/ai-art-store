@@ -1,1 +1,1 @@
-[![Watch the video](https://raw.githubusercontent.com/queenkatherinecodes/ai-art-store/main/thumbnail1.png)](https://raw.githubusercontent.com/queenkatherinecodes/ai-art-store/main/demo1.mov)
+[![Watch the video](https://img.youtube.com/vi/wcxgi5kpqho/0.jpg)](https://www.youtube.com/watch?v=wcxgi5kpqho)
