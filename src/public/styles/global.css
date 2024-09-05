@@ -1,0 +1,57 @@
+@import 'variables.css';
+@import 'layout.css';
+@import 'navigation.css';
+@import 'buttons.css';
+@import 'forms.css';
+@import 'hero.css';
+@import 'features.css';
+@import 'credentials.css';
+@import 'cart.css';
+@import 'ai-artwork.css';
+@import 'admin.css';
+@import 'gallery.css';
+@import 'reviews.css';
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-auth {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .auth-links {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .theme-toggle {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,86 @@
+.reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.reviews-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.star-rating {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.star {
+    color: var(--text-color);
+    opacity: 0.3;
+}
+
+.star.filled {
+    color: var(--accent-color);
+    opacity: 1;
+}
+
+.review-quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.next-review-button {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-review-button:hover {
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .reviews-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .review-quote {
+        font-size: 1rem;
+    }
+
+    .next-review-button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.next-review-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

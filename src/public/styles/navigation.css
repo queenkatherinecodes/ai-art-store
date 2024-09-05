@@ -1,0 +1,104 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--nav-bg-color);
+    box-shadow: 0 2px 10px var(--shadow-color);
+    flex-wrap: wrap;
+}
+
+.nav-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin-right: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-auth a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-auth a:hover {
+    color: var(--accent-color);
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+}
+
+.nav-auth a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.nav-auth a:last-child {
+    margin-right: 0;
+}
+
+.auth-links {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.auth-links a {
+    margin-left: 1.5rem;
+}
+
+.theme-toggle {
+    background-color: var(--nav-bg-color);
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.theme-toggle:hover {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+}
+
+.theme-toggle svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.nav-cart-logout {
+    display: grid;
+    align-items: center;
+    gap: 15px;
+}

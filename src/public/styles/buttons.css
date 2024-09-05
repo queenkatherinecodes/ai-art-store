@@ -1,0 +1,21 @@
+.button,
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(255, 65, 54, 0.2);
+}
+
+.button:hover,
+.cta-button:hover {
+    background-color: #e61e14;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 65, 54, 0.3);
+}

@@ -1,0 +1,26 @@
+.cart-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--nav-text-color);
+    transition: color 0.3s ease;
+}
+
+.cart-link:hover {
+    color: var(--accent-color);
+}
+
+.cart-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.cart-count {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    border-radius: 50%;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,175 @@
+.ai-artwork-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--card-bg-color) 100%);
+}
+
+.ai-contact-container {
+    background-color: var(--bg-color);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid var(--bg-color);
+}
+
+.ai-contact-header h1 {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.ai-contact-header p {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ai-contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.ai-contact-form input,
+.ai-contact-form textarea {
+    width: 95.3%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.ai-contact-form input:focus,
+.ai-contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+.ai-contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.ai-submit-button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(255, 65, 54, 0.4);
+}
+
+.ai-submit-button.hover-effect::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+    transform: scale(0);
+    transition: transform 0.5s ease-out;
+}
+
+.ai-submit-button.hover-effect:hover::before {
+    transform: scale(1);
+}
+
+.send-icon {
+    margin-left: 8px;
+}
+
+.ai-contact-success {
+    text-align: center;
+    padding: 2rem;
+}
+
+.sparkle-icon {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.captcha-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.captcha-container {
+    display: flex;
+    align-items: stretch;
+    gap: 0.5rem;
+    height: 40px;
+}
+
+.captcha-container canvas {
+    border-radius: 5px;
+    height: 100%;
+    width: auto;
+}
+
+.refresh-captcha {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 100%;
+}
+
+.refresh-captcha:hover {
+    background-color: #e61e14;
+}
+
+.captcha-input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.captcha-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+@media (max-width: 480px) {
+    .captcha-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .captcha-container {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,29 @@
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.feature {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    color: var(--text-color);
+}
