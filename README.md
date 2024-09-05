@@ -4,11 +4,10 @@
 
 ## Demo
 
-Check out the demo video:
+Click on the thumbnail to see a short demo:
 
 [![Watch the video](https://img.youtube.com/vi/wcxgi5kpqho/0.jpg)](https://www.youtube.com/watch?v=wcxgi5kpqho)
 
-Replace `VIDEO_ID` with your actual YouTube video ID.
 
 ## Prerequisites
 
