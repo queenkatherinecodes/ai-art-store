@@ -1,6 +1,13 @@
-
 # AI Art Website
 
+This is a proof-of-concept e-commerce store that sells AI generated artwork.
+
+The stack:
+- Frontend: React
+- Backend: NodeJS
+- Tests: Jest, NodeJS
+
+For fun, I've added AI Generated "customer" reviews.
 
 ## Demo
 
@@ -56,15 +63,15 @@ npm start
 
 ## Running Tests
 
-### Jest Tests
+### Unit Tests
 
-To run the Jest test suite, use:
+To run the Jest test suites, use:
 
 ```bash
 npm test
 ```
 
-### Additional Tests
+### Server Test Suite
 
 To run the `test.js` file, use:
 
